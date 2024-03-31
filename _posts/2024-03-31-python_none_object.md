@@ -1,7 +1,7 @@
 ---
 title: Python - Something about None.
-date: 2024-03-31 23:00:00 +100
-categories: [python]
+date: 2024-03-31 20:10:00 +100
+categories: [python,]
 tags: [python]
 ---
 
