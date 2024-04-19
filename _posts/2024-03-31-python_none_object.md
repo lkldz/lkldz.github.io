@@ -7,8 +7,8 @@ tags: [python]
 
 # <span style="color:olive">Something about None</span> 
 
-- **None** represents literally any type of value.
-- Use **is None** operator in conditions
+- **None** represents literally no value.
+- Use **_is None_** operator in conditions
 
 ```python
 var_a = None
