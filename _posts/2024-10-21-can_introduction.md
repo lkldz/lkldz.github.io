@@ -46,4 +46,4 @@ Other names:
 
 5. In opposite to "conventional networks" - CAN infrustructure does not need wires dedicated to each of network devices - what was expensive and risk of electrical noise (EMI) was high.
 
-![localImage](/assets/images/can/can_vs_conventcabl.png)
+![localImage](/assets/images/can/can_vs_conventcabl_comparison.PNG)
