@@ -1,6 +1,6 @@
 ---
 title: CAN - introduction.
-date: 2024-11-11 04:10:00 +100
+date: 2024-12-30 04:10:00 +100
 categories: [CAN,]
 tags: [CAN]
 ---
