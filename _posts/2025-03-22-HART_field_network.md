@@ -28,4 +28,36 @@ Examples include:
 #### <span style="color:gray">Communication Protocol</span> 
 <b>A set of rules and standards that define how data is transmitted and received over the network</b>. 
 
-Common fieldbus protocols include PROFIBUS, Modbus, HART, and Foundation Fieldbus.
+Common fieldbus protocols include:
+<ul> 
+    <li>PROFIBUS,</li> 
+    <li>Modbus,</li> 
+    <li>HART,</li> 
+    <li>Foundation Fieldbus.</li>
+</ul>
+
+#### <span style="color:gray">Network Topology</span> 
+<b>The physical and logical arrangement of devices on the network.</b>. 
+
+Common topologies include:
+<ul> 
+<li>bus,</li> 
+<li>star,</li> 
+<li>ring,</li> 
+<li>tree</li>
+</ul>
+
+#### <span style="color:gray">Central Control System</span> 
+<b>The system that monitors and controls the field devices.</b>. 
+
+It can be:
+<ul> 
+<li>a programmable logic controller (PLC),</li> 
+<li>a distributed control system (DCS),</li> 
+<li>a supervisory control and data acquisition (SCADA) system</li> 
+</ul>
+
+![localImage](/assets/images/industy_automation/field_network_structure.png)
+
+
+### <span style="color:orange">How a Field Network Works</span> 
