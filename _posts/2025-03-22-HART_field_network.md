@@ -57,7 +57,8 @@ It can be:
 <li>a supervisory control and data acquisition (SCADA) system</li> 
 </ul>
 
-![localImage](/assets/images/industy_automation/field_network_structure.png)
+![localImage](/assets/images/industry_automation/field_network_structure.png)</br>
+(Source of the image: https://www.ia.omron.com/support/guide/23/introduction.html)
 
 
 ### <span style="color:orange">How a Field Network Works</span> 
