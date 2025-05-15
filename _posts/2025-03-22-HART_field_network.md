@@ -63,3 +63,25 @@ It can be:
 
 
 ### <span style="color:orange">How a Field Network Works</span> 
+#### <span style="color:gray">Data Collection</span>
+Sensors in the field collect data from the industrial process (e.g., temperature, pressure, flow rate) and send this data to the central control system over the field network. 
+
+#### <span style="color:gray">Data Processing</span>
+The central control system processes the data received from the sensors. It may use this data to make decisions, such as adjusting the position of a valve or changing the speed of a motor.
+
+#### <span style="color:gray">Control Actions</span>
+Based on the processed data, the central control system sends commands to actuators in the field to perform specific actions (e.g., opening a valve, starting a motor).
+
+#### <span style="color:gray">Feedback Loop/Controls</span>
+The system continuously monitors the process, collects data, processes it, and sends control commands, creating a feedback loop that ensures the process operates efficiently and safely.
+
+![localImage](/assets/images/industry_automation/feedback_controls1.png)
+
+[Source of the image](https://www.britannica.com/technology/automation/Feedback-controls)
+
+![localImage](/assets/images/industry_automation/feedback_controls2.png)
+
+[Source of the image](https://www.electronics-tutorials.ws/systems/closed-loop-system.html)
+
+
+### <span style="color:orange">Benefits of Field Networks</span>
