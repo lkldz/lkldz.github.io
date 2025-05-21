@@ -103,15 +103,15 @@ Field networks can easily be expanded by adding more devices to the network with
 
 [Source](https://zipautomations.com/2024/07/31/abb-800xa-dcs-system-architecture/)
 
-<b>Level: Field Network</b> - <b><em>field devices send the signals to the controllers via predefined signals (24V, 4-20mA)</b></em> according to fieldbus protocols, like HART, PROFIBUS, Modbus etc.
+<b>Level: Field Network</b> - field devices send the signals to the controllers via predefined signals (24V, 4-20mA) according to fieldbus protocols, like HART, PROFIBUS, Modbus etc.
 
-<b>Level: Control Network</b> - on this level <b><em>there is communication between controllers</b></em> on the network.
+<b>Level: Control Network</b> - on this level there is communication between controllers on the network.
 The controllers share information about its variables like (transmitter values, power parameters etc) with other controllers on the network.
 On this layer different communication protocols like HART, PROFINET, PROFIBUS, MODBUS etc. can be used for communication.
-The control network is <b><em>also used for communication between the controllers or DCS servers </b></em> (the main purpose of the servers is to acquire information from the control network for logging, analysis, visualization and so on).
+The control network is also used for communication between the controllers or DCS servers (the main purpose of the servers is to acquire information from the control network for logging, analysis, visualization and so on).
 
-<b>Level: Client Server Network</b> - used for <b><em>communication between DCS servers and the operator workplace for visualization.</b></em> AND also, <b><em>between the servers and the engineering workplace for controller programming</b></em> and tag configuration. 
-The protocol most used <b><em>here is OPC and for newer systems OPC UA.</b></em>
+<b>Level: Client Server Network</b> - used for communication between DCS servers and the operator workplace for visualization. AND also, between the servers and the engineering workplace for controller programming and tag configuration. The protocol most used here is OPC and for newer systems OPC UA.
 
 <b>Level: Plant Network</b> - used for communication between the control system and the plant IT/Business Systems.
 
+### <span style="color:orange">Next examples</span>
