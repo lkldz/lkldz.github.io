@@ -115,3 +115,10 @@ The control network is also used for communication between the controllers or DC
 <b>Level: Plant Network</b> - used for communication between the control system and the plant IT/Business Systems.
 
 ### <span style="color:orange">Next examples</span>
+
+
+1.A field network in which the control data of systems and equipment on the line and the data of sensors that detect the state of works in progress and other information is exchanged with a programmable logic controller (PLC). [Source](https://article.murata.com/en-global/article/dx-smart-factory-7)
+![localImage](/assets/images/industry_automation/example_field_network2.png)
+
+2.Typical Architecture of Computer Control Systems by Schneider Electric-Modicon Quantum PLC. [Source](https://www.researchgate.net/figure/Typical-Architecture-of-Computer-Control-Systems-Source-Schneider-Electric-Modicon_fig3_315771543)
+![localImage](/assets/images/industry_automation/example_field_network3.png)
