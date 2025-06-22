@@ -104,6 +104,7 @@ The HART device (like a smart sensor) sends digital information on top of the an
 Because these tones are small and switch fast, they don’t affect the analog signal. Special devices on the other end can separate the analog and digital parts.
 
 ![localImage](/assets/images/industry_automation/hart_fsk.png)
+ [Source](https://www.instrumentationtoolbox.com/2014/06/basics-of-hart-communication-protocol.html)
 
 When we say a wave oscillates, we mean that something moves up and down (or side to side) repeatedly in a fast, regular pattern.
 
@@ -126,7 +127,7 @@ When we say a wave “oscillates at 1200 Hz,” it means:
 <li>The electronics in the device "see" this and interpret it as a digital 1 or 0.</li>
 </ul>
 
-</br>
+
 <b>Real-World Analogy</b>
 
 Imagine you’re listening to soft background music (the analog signal), and someone is tapping Morse code on the table (the FSK tones). You can still enjoy the music and also decode the message if you know how to "listen" for it. That’s what HART devices and controllers do.
