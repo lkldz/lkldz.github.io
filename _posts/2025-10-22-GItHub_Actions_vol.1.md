@@ -5,15 +5,38 @@ categories: [CI/CD, GitHub]
 tags: [ci_cd, github]
 ---
 
-# <span style="color:olive">Tame GitHub Actions</span> 
+# <span style="color:olive">GitHub Actions</span> 
 ---
 
 ### <span style="color:orange">Entry Points</span> 
 
-1. <u>GitHub Actions is a <b>workflow automation service</b></u>.
+1. <u>GitHub Actions is a <span style="color:limegreen"><b>workflow automation service</b></u></span>.
 
-<em>A workflow automation service is a software tool or platform that helps businesses automate repetitive tasks and processes.</em> 
+<em>A workflow automation service is a software tool or platform that helps businesses <span style="color:limegreen">automate repetitive tasks and processes.</span></em> 
 
-So, GitHub Actions allows to automate code repository related tasks and processes.
+So, GitHub Actions allows to <span style="color:limegreen">automate code repository related repetitive tasks and processes</span>.
 
-2. <u>Repository related processes.</u>
+---
+
+2. <u>Repository related processes and tasks.</u>
+<ul>
+<li> CI/CD</li>
+<li> Repository & Code Management</li>
+</ul>
+
+---
+
+3. CI/CD
+
+-> <b><span style="color:limegreen">CI - Continuous Integration</span>
+
+-> <span style="color:limegreen">CD - Continuous Delivery</b></span>
+
+Together these terms describe <span style="color:limegreen">methods of automated code development and product deployment.</span>
+
+<b><span style="color:coral">CI - automatically build, test and merge of new code or code changes into existing code.</b></span>
+
+<b><span style="color:MediumPurple">CD - automatically publish a new product (app, website, etc.) version once the code has been built, tested and merged.</b></span>
+
+---
+
