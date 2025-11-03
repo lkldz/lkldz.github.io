@@ -17,16 +17,23 @@ tags: [python]
 ![localImage](/assets/images/python/interpreter/helloworld.png)
 
 
+---
+
 ### <span style="color:royalblue">Code interpretation</span> 
 
 <b><span style="color:gray">Interpretation workflow</span></b>
 
+The Python <em><span style="color:goldenrod">interpreter reads the code line by line</span></em>.
 
-The Python <em><span style="color:goldenrod">interpreter reads the code line by line</span></em>. <span style="color:green">↓</span>
+↓
 
-It <em><span style="color:goldenrod">translates each line into bytecode</span></em> (an intermediate form). <span style="color:green">↓</span>
+It <em><span style="color:goldenrod">translates each line into bytecode</span></em> (an intermediate form).
+
+↓
 
 The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that bytecode</span></em> immediately.
+
+---
 
 ### <span style="color:royalblue">Interpreter</span> 
 be continued...
