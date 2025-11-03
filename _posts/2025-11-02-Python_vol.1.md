@@ -22,10 +22,10 @@ tags: [python]
 <b><span style="color:gray">Interpretation workflow</span></b>
 
 
-The Python <em><span style="color:goldenrod">interpreter reads the code line by line</span></em>.
-</br><span style="color:green">↓</span></br>
-It <em><span style="color:goldenrod">translates each line into bytecode</span></em> (an intermediate form).
-</br><span style="color:green">↓</span></br>
+The Python <em><span style="color:goldenrod">interpreter reads the code line by line</span></em>.</br>
+<span style="color:green">↓</span></br>
+It <em><span style="color:goldenrod">translates each line into bytecode</span></em> (an intermediate form).</br>
+<span style="color:green">↓</span></br>
 The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that bytecode</span></em> immediately.
 
 ### <span style="color:royalblue">Interpreter</span> 
