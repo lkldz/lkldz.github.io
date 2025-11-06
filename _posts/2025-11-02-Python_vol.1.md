@@ -27,7 +27,7 @@ The Python <em><span style="color:goldenrod">interpreter reads the code line by 
 
 ↓
 
-It <em><span style="color:goldenrod">translates each line into bytecode</span></em> (an intermediate form).
+It <em><span style="color:goldenrod">compiles each line into bytecode</span></em> (an intermediate form).
 
 ↓
 
@@ -36,4 +36,16 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 ---
 
 ### <span style="color:royalblue">Interpreter</span> 
-be continued...
+
+<li>Interpreter is the <b><span style="color:DarkKhaki">program that reads and runs Python code</span></b>.</li>
+</br>
+<li>It <b><span style="color:DarkKhaki">translates human-readable Python source code into machine-executable instructions.</span></b></li>
+</br>
+<li>Its structure includes <b><span style="color:DarkKhaki">several key components</span></b> that work together to perform: 
+
+- <em><span style="color:DarkKhaki">lexical analysis</em></span>, 
+- <em><span style="color:DarkKhaki">parsing</em></span>, 
+- <em><span style="color:DarkKhaki">compilation to bytecode</em></span>, 
+- and <em><span style="color:DarkKhaki">execution by a virtual machine.</em></span></li>
+
+to be continued...
