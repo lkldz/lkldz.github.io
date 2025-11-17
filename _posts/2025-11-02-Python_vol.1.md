@@ -5,7 +5,7 @@ categories: [Python]
 tags: [python]
 ---
 
-# <span style="color:olive">Python vol.1</span> 
+# <span style="color:olive">Python vol.1 - Interpreter</span> 
 ---
 
 ### <span style="color:royalblue">Interpreted language</span> 
@@ -47,6 +47,16 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 <li><em><span style="color:DarkKhaki">compilation to bytecode</span></em></li> 
 <li>and <em><span style="color:DarkKhaki">execution by a virtual machine.</span></em></li>
 </ul>
+</ul>&nbsp;&nbsp;
+
+
+<b><span style="color:lightcoral">Types of Python interpreters: </span></b>
+<ul>
+<li><b><span style="color:salmon">CPython</span></b> - the default and most widely used interpreter, <em><span style="color:salmon">written in C</span></em>. </li>&nbsp;
+<li><b><span style="color:salmon">PyPy</span></b> - a faster alternative with a <em><span style="color:salmon">Just-In-Time (JIT) compiler.</span></em>. </li>&nbsp;
+<li><b><span style="color:salmon">Jython</span></b> - runs python code on the <em><span style="color:salmon">Java Virtual Machine.</span></em>. </li>&nbsp;
+<li><b><span style="color:salmon">IronPython</span></b> - <em><span style="color:salmon">integrates with .NET</span></em> and runs on the Common Language Runtime (CLR).</li>&nbsp;
+<li><b><span style="color:salmon">MicroPython</span></b> - designed <em><span style="color:salmon">for microcontrollers and embedded systems.</span></em></li>&nbsp;
 </ul>
 
-to be continued...
+&nbsp;&nbsp; to be continued...
