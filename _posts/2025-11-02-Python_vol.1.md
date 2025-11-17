@@ -54,10 +54,11 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 <ul>
 <li><b><span style="color:salmon">CPython</span></b> - the default and most widely used interpreter, <em><span style="color:salmon">written in C</span></em>. </li>&nbsp;
 <li><b><span style="color:salmon">PyPy</span></b> - a faster alternative with a <em><span style="color:salmon">Just-In-Time (JIT) compiler.</span></em>. </li>&nbsp;
-<li><b><span style="color:salmon">Jython</span></b> - runs python code on the <em><span style="color:salmon">Java Virtual Machine.</span></em>. </li>&nbsp;
+<li><b><span style="color:salmon">Jython</span></b> - runs python code on the <em><span style="color:salmon">Java Virtual Machine.</span></em> </li>&nbsp;
 <li><b><span style="color:salmon">IronPython</span></b> - <em><span style="color:salmon">integrates with .NET</span></em> and runs on the Common Language Runtime (CLR).</li>&nbsp;
 <li><b><span style="color:salmon">MicroPython</span></b> - designed <em><span style="color:salmon">for microcontrollers and embedded systems.</span></em></li>&nbsp;
-</ul>
+</ul>&nbsp;&nbsp;
+
 
 #### <b><span style="color:MediumSeaGreen">Interpreter components: </span></b>
 <ul>
