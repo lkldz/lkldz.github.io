@@ -50,7 +50,7 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 </ul>&nbsp;&nbsp;
 
 
-<b><span style="color:lightcoral">Types of Python interpreters: </span></b>
+#### <b><span style="color:lightcoral">Types of Python interpreters: </span></b>
 <ul>
 <li><b><span style="color:salmon">CPython</span></b> - the default and most widely used interpreter, <em><span style="color:salmon">written in C</span></em>. </li>&nbsp;
 <li><b><span style="color:salmon">PyPy</span></b> - a faster alternative with a <em><span style="color:salmon">Just-In-Time (JIT) compiler.</span></em>. </li>&nbsp;
@@ -58,5 +58,22 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 <li><b><span style="color:salmon">IronPython</span></b> - <em><span style="color:salmon">integrates with .NET</span></em> and runs on the Common Language Runtime (CLR).</li>&nbsp;
 <li><b><span style="color:salmon">MicroPython</span></b> - designed <em><span style="color:salmon">for microcontrollers and embedded systems.</span></em></li>&nbsp;
 </ul>
+
+#### <b><span style="color:MediumSeaGreen">Interpreter components: </span></b>
+<ul>
+<li><b><span style="color:SeaGreen">Lexer/Tokenizer</span></b> - converts <em><span style="color:SeaGreen">source code into tokens</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">Parser</span></b> - <em><span style="color:SeaGreen">analyzes tokens</span></em> according to Python grammar rules and <em><span style="color:SeaGreen">builds syntax tree from tokens</span></em>.</li>&nbsp;
+<li><b><span style="color:SeaGreen">AST (Abstract Syntax Tree) Generator</span></b> - represents <em><span style="color:SeaGreen">code structure</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">Compiler</span></b> - compiles <em><span style="color:SeaGreen">AST into bytecode</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">Bytecode</span></b> - low-level <em><span style="color:SeaGreen">intructions for PVM</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">PVM (Python Virtual Machine)</span></b> - it <em><span style="color:SeaGreen">executes bytecode</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">Memory Manager</span></b> - handles <em><span style="color:SeaGreen">memory and garbage collection</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">Standard Library</span></b> - provides <em><span style="color:SeaGreen">built-in modules and functions</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">C API (Runtime)</span></b> - underlaying <em><span style="color:SeaGreen">implementation in C</span></em>. </li>&nbsp;
+</ul>
+
+---
+
+### <span style="color:SandyBrown">Lexer/Tokenizer</span> 
 
 &nbsp;&nbsp; to be continued...
