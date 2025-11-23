@@ -77,4 +77,34 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 
 ### <span style="color:SandyBrown">Lexer/Tokenizer</span> 
 
+A <b><span style="color:sandybrown">lexer (lexical analyzer)</span></b> is the <b><span style="color:sandybrown">first stage of processing</span></b> Python source code.
+
+Its job is to <b><span style="color:sandybrown">read raw text and convert it into a stream of tokens</span></b>.
+
+#### <em><span style="color:DarkOrange">How Lexer/Tokenizer works?</span></em>
+
+<ol>
+<li>Lexer <b><span style="color:DarkOrange">scans through the entire source text</span></b> and <b><span style="color:DarkOrange">reads the code character by character</span></b>.</li>&nbsp;
+<li><b><span style="color:DarkOrange">Groups characters into tokens</span></b>.</li>&nbsp;
+<li><b><span style="color:DarkOrange">Ignores irrelevant text</span></b>. For example comments (# ...).</li>&nbsp;
+<li><b><span style="color:DarkOrange">Handles indentation levels.</span></b></li>&nbsp;
+<li><b><span style="color:DarkOrange">Processes multiline strings and f-strings.</span></b></li>&nbsp;
+<li><b><span style="color:DarkOrange">Sends tokens to the parser</span></b>.</li>
+</ol>&nbsp;
+
+<em><span style="color:RosyBrown">Examples of token types:</span></em>
+<ul>
+<li><span style="color:RosyBrown">NAME</span> — variable or function name</li>
+<li><span style="color:RosyBrown">NUMBER</span> — numeric literal</li>
+<li><span style="color:RosyBrown">STRING</span> — string literal</li>
+<li><span style="color:RosyBrown">OP</span> — operator (+, ==, **, etc.)</li>
+<li><span style="color:RosyBrown">NEWLINE</span> — end of line</li>
+<li><span style="color:RosyBrown">INDENT / DEDENT</span> — indentation changes</li>
+<li><span style="color:RosyBrown">KEYWORD</span> — e.g., if, for, def</li>
+</ul>
+
+
+
+---
+
 &nbsp;&nbsp; to be continued...
