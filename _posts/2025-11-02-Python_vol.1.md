@@ -1,6 +1,6 @@
 ---
-title: Python vol.1
-date: 2025-11-02 01:10:00 +100
+title: Python vol.1 - Interpreter
+date: 2025-11-12 01:10:00 +100
 categories: [Python]
 tags: [python]
 ---
@@ -81,6 +81,8 @@ A <b><span style="color:sandybrown">lexer (lexical analyzer)</span></b> is the <
 
 Its job is to <b><span style="color:sandybrown">read raw text and convert it into a stream of tokens</span></b>.
 
+In <b><span style="color:sandybrown">CPython</span></b>, the <b><span style="color:sandybrown">tokenizer is part of the C module defined in tokenizer.c</span></b>.
+
 #### <em><span style="color:DarkOrange">How Lexer/Tokenizer works?</span></em>
 
 <ol>
@@ -101,10 +103,18 @@ Its job is to <b><span style="color:sandybrown">read raw text and convert it int
 <li><span style="color:RosyBrown">NEWLINE</span> — end of line</li>
 <li><span style="color:RosyBrown">INDENT / DEDENT</span> — indentation changes</li>
 <li><span style="color:RosyBrown">KEYWORD</span> — e.g., if, for, def</li>
-</ul>
+</ul>&nbsp;
 
+#### <em><span style="color:peru">The token’s characteristics</span></em>
 
-
+<ol>
+<li>Tokens are <b><span style="color:peru">flat and don't know about Python's syntax </span></b>.</li>&nbsp;
+<li>A token is just a <b><span style="color:peru">simple, linear item produced by the tokenizer</span></b>.</li>&nbsp;
+<li>They are <b><span style="color:peru">produced one after another, in a flat sequence</span></b>.</li>&nbsp;
+<li>The flat sequence means - <b><span style="color:peru">there is no hierarchical structure (no tree, no nesting, no precedence awareness)</span></b>.</li>&nbsp;
+<li>The <b><span style="color:peru">tokenizer only reads characters and emits tokens</span></b>.</li>&nbsp;
+<li><b><span style="color:peru">The tokenizer does not attempt to understand</span></b> expressions, control flow, operator precedence and so on.</li>&nbsp;
+</ol>
 ---
 
 &nbsp;&nbsp; to be continued...
