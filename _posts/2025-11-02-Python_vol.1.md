@@ -143,29 +143,30 @@ TokenInfo(type=4 (NEWLINE), string='', start=(1, 11), end=(1, 12), line='x = 10 
 TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 ```
 
-<ul>
-<li><b><span style="color:plum">import tokenize</span></b> - imports Python’s built-in tokenizer module.</li>&nbsp;
-<li><b><span style="color:plum">from io import BytesIO</span></b></li>&nbsp;
-/span></b>
+
+<b><span style="color:plum">import tokenize</span></b> - imports Python’s built-in tokenizer module.&nbsp;
+
+<b><span style="color:plum">from io import BytesIO</span></b>&nbsp;
+
 <em><b><span style="color:orange">from io</span></b></em>&nbsp;
 
-&emsp;- <b><span style="color:PeachPuff">load the module named io</span></b>.&nbsp;
+&emsp;<b><span style="color:PeachPuff">load the module named io</span></b>.&nbsp;
 
-&emsp;- io is a <b><span style="color:PeachPuff">standard Python module</span></b>. 
+&emsp;io is a <b><span style="color:PeachPuff">standard Python module</span></b>. &nbsp;
 
-&emsp;- It <b><span style="color:PeachPuff">provides tools for input/output (I/O): reading files, writing files, working with in-memory streams</span></b> <em>[file-like object that lives in RAM instead of on disk, no real file is created.]</em> (text or bytes). So this line is just an importing the module's code.&nbsp;
+&emsp;It <b><span style="color:PeachPuff">provides tools for input/output (I/O): reading files, writing files, working with in-memory streams</span></b> <em>[file-like object that lives in RAM instead of on disk, no real file is created.]</em> (text or bytes). So this line is just an importing the module's code.&nbsp;
 
 <em><b><span style="color:orange">import BytesIO</span></b></em>&nbsp;
 
-&emsp;- from the io module, <b><span style="color:PeachPuff">import only the BytesIO class</span></b>.
+&emsp;from the io module, <b><span style="color:PeachPuff">import only the BytesIO class</span></b>.&nbsp;
 
-&emsp;- BytesIO is a <b><span style="color:PeachPuff">file-like object that lives in memory</span></b>.
+&emsp;BytesIO is a <b><span style="color:PeachPuff">file-like object that lives in memory</span></b>.&nbsp;
 
-&emsp;- It lets you <b><span style="color:PeachPuff">treat bytes stored in a variable as if they were coming from a file</span></b>
+&emsp;It lets you <b><span style="color:PeachPuff">treat bytes stored in a variable as if they were coming from a file</span></b>&nbsp;
 
-&emsp;- This matters as the <b><span style="color:PeachPuff">tokenizer expects a file, not a string</span></b>.&nbsp;
+&emsp;This matters as the <b><span style="color:PeachPuff">tokenizer expects a file, not a string</span></b>.&nbsp;
 
-<li><b><span style="color:plum">code = b"x = 10 + 20"</span></b></li>&nbsp;
+<b><span style="color:plum">code = b"x = 10 + 20"</span></b>&nbsp;
 
 - <b><span style="color:PeachPuff">Store the text x = 10 + 20 </b><span style="color:PeachPuff">as raw bytes</span></b>.
 - The <b><span style="color:PeachPuff">b before the quotes means this is a bytes</span></b> literal, not a normal string.
@@ -197,7 +198,7 @@ Each number is the ASCII value of a character:
 
 - like <b><span style="color:PeachPuff">reading from a .py file</span></b>
 </ul>
-</ul>
+
 ---
 
 &nbsp;&nbsp; to be continued...
