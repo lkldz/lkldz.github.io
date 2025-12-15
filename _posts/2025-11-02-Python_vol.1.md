@@ -169,9 +169,9 @@ TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 </ul>
 <b><span style="color:plum">code = b"x = 10 + 20"</span></b>&nbsp;
 
-- <b><span style="color:PeachPuff">Store the text x = 10 + 20 </b><span style="color:PeachPuff">as raw bytes</span></b>.
-- The <b><span style="color:PeachPuff">b before the quotes means this is a bytes</span></b> literal, not a normal string.
-- <b><span style="color:PeachPuff">Bytes are numbers between 0–255 that represent characters</span></b>.
+- <b><span style="color:LightSalmon">Store the text x = 10 + 20 as raw bytes</span></b>.
+- The <b><span style="color:LightSalmon">b before the quotes means this is a bytes</span></b> literal, not a normal string.
+- <b><span style="color:LightSalmon">Bytes are numbers between 0–255 that represent characters</span></b>.
 ```python
 print(list(b"x = 10 + 20"))
 ```
@@ -179,7 +179,7 @@ Output
 ```csharp
 [120, 32, 61, 32, 49, 48, 32, 43, 32, 50, 48]
 ```
-Each number is the ASCII value of a character:
+<b><span style="color:LightSalmon">Each number is the ASCII value of a character</span></b>:
 
 120 → 'x'
 
@@ -189,15 +189,16 @@ Each number is the ASCII value of a character:
 
 <em><b><span style="color:orange">Why is b"x = 10 + 20" used?</span></b></em>&nbsp;
 <ul>
-<li>Because <b><span style="color:PeachPuff">tokenize works with bytes, not strings</span></b>.</li>&nbsp;
+<li>Because <b><span style="color:orange">tokenizer works with bytes, not strings</span></b>.</li>&nbsp;
 
-<li>The <b><span style="color:PeachPuff">tokenizer expects input that:</span></b></li>&nbsp;
+<li>The <b><span style="color:orange">tokenizer expects input that:</span></b></li>&nbsp;
+<ol>
+<li><b><span style="color:orange">comes line by line</span></b></li>
 
-- <b><span style="color:PeachPuff">comes line by line</span></b>
+<li><b><span style="color:orange">is bytes</span></b></li>
 
-- <b><span style="color:PeachPuff">is bytes</span></b>
-
-- like <b><span style="color:PeachPuff">reading from a .py file</span></b>
+<li>like <b><span style="color:orange">reading from a .py file</span></b></li>
+</ol>
 </ul>
 
 ---
