@@ -150,22 +150,23 @@ TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 
 <em><b><span style="color:orange">from io</span></b></em>&nbsp;
 
-&emsp;<b><span style="color:PeachPuff">load the module named io</span></b>.&nbsp;
+<ul>
+<li>&emsp;<b><span style="color:orange">load the module named io</span></b>.</li>&nbsp;
 
-&emsp;io is a <b><span style="color:PeachPuff">standard Python module</span></b>. &nbsp;
+<li>&emsp;io is a <b><span style="color:orange">standard Python module</span></b>.</li>&nbsp;
 
-&emsp;It <b><span style="color:PeachPuff">provides tools for input/output (I/O): reading files, writing files, working with in-memory streams</span></b> <em>[file-like object that lives in RAM instead of on disk, no real file is created.]</em> (text or bytes). So this line is just an importing the module's code.&nbsp;
+<li>&emsp;It <b><span style="color:orange">provides tools for input/output (I/O): reading files, writing files, working with in-memory streams</span></b> <em>[file-like object that lives in RAM instead of on disk, no real file is created.]</em> (text or bytes). So this line is just an importing the module's code.</li>&nbsp;
+</ul>
+<em><b><span style="color:MediumSeaGreen">import BytesIO</span></b></em>&nbsp;
+<ul>
+<li>&emsp;from the io module, <b><span style="color:MediumSeaGreen">import only the BytesIO class</span></b>.</li>&nbsp;
 
-<em><b><span style="color:orange">import BytesIO</span></b></em>&nbsp;
+<li>&emsp;BytesIO is a <b><span style="color:MediumSeaGreen">file-like object that lives in memory</span></b>.</li>&nbsp;
 
-&emsp;from the io module, <b><span style="color:PeachPuff">import only the BytesIO class</span></b>.&nbsp;
+<li>&emsp;It lets you <b><span style="color:MediumSeaGreen">treat bytes stored in a variable as if they were coming from a file</span></b></li>&nbsp;
 
-&emsp;BytesIO is a <b><span style="color:PeachPuff">file-like object that lives in memory</span></b>.&nbsp;
-
-&emsp;It lets you <b><span style="color:PeachPuff">treat bytes stored in a variable as if they were coming from a file</span></b>&nbsp;
-
-&emsp;This matters as the <b><span style="color:PeachPuff">tokenizer expects a file, not a string</span></b>.&nbsp;
-
+<li>&emsp;This matters as the <b><span style="color:MediumSeaGreen">tokenizer expects a file, not a string</span></b>.</li>&nbsp;
+</ul>
 <b><span style="color:plum">code = b"x = 10 + 20"</span></b>&nbsp;
 
 - <b><span style="color:PeachPuff">Store the text x = 10 + 20 </b><span style="color:PeachPuff">as raw bytes</span></b>.
