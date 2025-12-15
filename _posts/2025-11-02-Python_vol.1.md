@@ -1,6 +1,6 @@
 ---
 title: Python vol.1 - Interpreter
-date: 2025-15-12 01:10:00 +100
+date: 2025-12-12 01:10:00 +100
 categories: [Python]
 tags: [python]
 ---
