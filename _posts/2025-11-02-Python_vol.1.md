@@ -1,7 +1,7 @@
 ---
 title: Python vol.1 - Interpreter
-date: 2025-12-12 01:10:00 +100
-categories: [Python]
+date: 2025-12-13 01:10:00 +100
+categories: [python,]
 tags: [python]
 ---
 
@@ -88,7 +88,12 @@ In <b><span style="color:sandybrown">CPython</span></b>, the <b><span style="col
 <ol>
 <li>Lexer <b><span style="color:DarkOrange">scans through the entire source text</span></b> and <b><span style="color:DarkOrange">reads the code character by character</span></b>.</li>&nbsp;
 <li><b><span style="color:DarkOrange">Groups characters into tokens</span></b>.</li>&nbsp;
+<li><b><span style="color:DarkOrange">The tokenizer does not turn source code into bytes — the source code already is bytes.</span></b>
+The tokenizer simply groups bytes into tokens.</li>&nbsp;
+<li><b><span style="color:DarkOrange">A .py file on disk is simply a sequence of bytes</span></b>. The tokenizer does not convert anything into bytes — it receives bytes from the operating system.</li>&nbsp;
 <li><b><span style="color:DarkOrange">Ignores irrelevant text</span></b>. For example comments (# ...).</li>&nbsp;
+<li>A tokenizer does not need to know Python syntax to assign tokens. <b><span style="color:DarkOrange">It does not understand meaning, only character patterns, based on simple lexical rules (regexes an so on).</span></b></li>&nbsp;
+<li>The tokenizer reads characters from left to right and asks: <b><span style="color:DarkOrange">“Which pattern of characters does this fragment match?”</span></b></li>&nbsp;
 <li><b><span style="color:DarkOrange">Handles indentation levels.</span></b></li>&nbsp;
 <li><b><span style="color:DarkOrange">Processes multiline strings and f-strings.</span></b></li>&nbsp;
 <li><b><span style="color:DarkOrange">Sends tokens to the parser</span></b>.</li>
@@ -118,7 +123,7 @@ In <b><span style="color:sandybrown">CPython</span></b>, the <b><span style="col
 <li>The tokenizer <b><span style="color:peru">only classifies substrings into categories</span></b>.</li>&nbsp;
 </ol>
 
-#### <em><span style="color:tan">How the tokenizer works?</span></em>
+#### <em><span style="color:tan">The pracitcal example</span></em>
 
 ```python
 import tokenize
@@ -144,9 +149,9 @@ TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 ```
 
 
-<b><span style="color:plum">import tokenize</span></b> - imports Python’s built-in tokenizer module.&nbsp;
+<b><span style="color:gold">import tokenize</span></b> - imports Python’s built-in tokenizer module.&nbsp;
 
-<b><span style="color:plum">from io import BytesIO</span></b>&nbsp;
+<b><span style="color:gold">from io import BytesIO</span></b>&nbsp;
 
 <em><b><span style="color:orange">from io</span></b></em>&nbsp;
 
@@ -167,7 +172,7 @@ TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 
 <li>&emsp;This matters as the <b><span style="color:MediumSeaGreen">tokenizer expects a file, not a string</span></b>.</li>&nbsp;
 </ul>
-<b><span style="color:plum">code = b"x = 10 + 20"</span></b>&nbsp;
+<b><span style="color:gold">code = b"x = 10 + 20"</span></b>&nbsp;
 
 - <b><span style="color:LightSalmon">Store the text x = 10 + 20 as raw bytes</span></b>.
 - The <b><span style="color:LightSalmon">b before the quotes means this is a bytes</span></b> literal, not a normal string.
@@ -187,20 +192,42 @@ Output
 
 43 → '+'
 
-<em><b><span style="color:orange">Why is b"x = 10 + 20" used?</span></b></em>&nbsp;
+<em><b><span style="color:MediumPurple">Why bytes are used?</span></b></em>&nbsp;
 <ul>
-<li>Because <b><span style="color:orange">tokenizer works with bytes, not strings</span></b>.</li>&nbsp;
+<li>Because <b><span style="color:MediumPurple">tokenizer works with bytes, not strings</span></b>.</li>&nbsp;
+<li>Because <b><span style="color:MediumPurple">Source code is a sequence of bytes, not “characters”</span></b>.</li>&nbsp;
+<li><b><span style="color:MediumPurple">Bytes are the lowest, unambiguous, and fastest level</span></b> at which source code can be correctly and efficiently analyzed.</li>&nbsp;
+<li>Only <b><span style="color:MediumPurple">later are those bytes decoded (e.g. as UTF-8) into characters</span></b> .</li>&nbsp;
+<li>The tokenizer must start with bytes because files may use different encodings and encoding errors must be detected.</li>&nbsp;
 
-<li>The <b><span style="color:orange">tokenizer expects input that:</span></b></li>&nbsp;
+<li>The <b><span style="color:MediumPurple">tokenizer expects input that:</span></b></li>&nbsp;
 <ol>
-<li><b><span style="color:orange">comes line by line</span></b></li>
+<li><b><span style="color:MediumPurple">comes line by line</span></b></li>
 
-<li><b><span style="color:orange">is bytes</span></b></li>
+<li><b><span style="color:MediumPurple">is bytes</span></b></li>
 
-<li>like <b><span style="color:orange">reading from a .py file</span></b></li>
+<li>like <b><span style="color:MediumPurple">reading from a .py file</span></b></li>
 </ol>
+</ul>&nbsp;
+
+
+<b><span style="color:gold">tokens = tokenize.tokenize(BytesIO(code).readline)</span></b>&nbsp;
+<ul>
+<li><b><span style="color:SeaGreen">It comes from the tokenize module.</span></b></li>&nbsp;
+<li><b><span style="color:SeaGreen">tokenize.tokenize is a Python standard-library function that breaks Python source code into tokens,</span></b> which are the smallest meaningful units of the language.at which source code can be correctly and efficiently analyzed.</li>&nbsp;
+<li><b><span style="color:SeaGreen">tokenize.tokenize() reads Python code as bytes and produces an iterator of tokens</span></b></li>&nbsp;
+<li><b><span style="color:SeaGreen">BytesIO(code)
+wraps the code in an in-memory byte stream</span></b> so it behaves like a file (tokenize.tokenize works with byte streams, not plain strings).</li>&nbsp;
+<li><b><span style="color:SeaGreen">.readline is a method that reads one line of text (or bytes) at a time from a file-like object.</span></b></li>&nbsp;
 </ul>
 
+```python
+with open("example.txt") as f:
+    line = f.readline()
+    print(line)
+```
 ---
+
+### <span style="color:SandyBrown">Parser</span> 
 
 &nbsp;&nbsp; to be continued...
