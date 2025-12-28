@@ -184,7 +184,7 @@ Output
 ```csharp
 [120, 32, 61, 32, 49, 48, 32, 43, 32, 50, 48]
 ```
-<b><span style="color:LightSalmon">Each number is the ASCII value of a character</span></b>:
+<b><span style="color:SeaGreen">Each number is the ASCII value of a character</span></b>:
 
 120 → 'x'
 
@@ -192,27 +192,27 @@ Output
 
 43 → '+'
 
-<em><b><span style="color:MediumPurple">Why bytes are used?</span></b></em>&nbsp;
+<em><b><span style="color:Tan"><u>Why bytes are used?</u></span></b></em>&nbsp;
 <ul>
-<li>Because <b><span style="color:MediumPurple">tokenizer works with bytes, not strings</span></b>.</li>&nbsp;
+<li>Because <b><span style="color:SeaGreen">tokenizer works with bytes, not strings</span></b>.</li>&nbsp;
 <li>Byte is a data unit. It consists of 8 bits. Byte can take one of values from 0 to 255. Each of alphanumeric sign can be represented by a specific value (0 to 255).</li>&nbsp;
-<li>Because <b><span style="color:MediumPurple">Source code is a sequence of bytes, not “characters”</span></b>.</li>&nbsp;
-<li><b><span style="color:MediumPurple">Bytes are the lowest, unambiguous, and fastest level</span></b> at which source code can be correctly and efficiently analyzed.</li>&nbsp;
-<li>Only <b><span style="color:MediumPurple">later are those bytes decoded (e.g. as UTF-8) into characters</span></b> .</li>&nbsp;
+<li>Because <b><span style="color:SeaGreen">Source code is a sequence of bytes, not “characters”</span></b>.</li>&nbsp;
+<li><b><span style="color:SeaGreen">Bytes are the lowest, unambiguous, and fastest level</span></b> at which source code can be correctly and efficiently analyzed.</li>&nbsp;
+<li>Only <b><span style="color:SeaGreen">later are those bytes decoded (e.g. as UTF-8) into characters</span></b> .</li>&nbsp;
 <li>The tokenizer must start with bytes because files may use different encodings and encoding errors must be detected.</li>&nbsp;
 
-<li>The <b><span style="color:MediumPurple">tokenizer expects input that:</span></b></li>&nbsp;
+<li>The <b><span style="color:SeaGreen">tokenizer expects input that:</span></b></li>&nbsp;
 <ol>
-<li><b><span style="color:MediumPurple">comes line by line</span></b></li>
+<li><b><span style="color:SeaGreen">comes line by line</span></b></li>
 
-<li><b><span style="color:MediumPurple">is bytes</span></b></li>
+<li><b><span style="color:SeaGreen">is bytes</span></b></li>
 
-<li>like <b><span style="color:MediumPurple">reading from a .py file</span></b></li>
+<li>like <b><span style="color:SeaGreen">reading from a .py file</span></b></li>
 </ol>
 </ul>&nbsp;
 
 
-<b><span style="color:SeaGreen"><em><u>tokens = tokenize.tokenize(BytesIO(code).readline)</u></em></span></b>&nbsp;
+<b><span style="color:tan"><em><u>tokens = tokenize.tokenize(BytesIO(code).readline)</u></em></span></b>&nbsp;
 <ul>
 <li><b><span style="color:SeaGreen">It comes from the tokenize module.</span></b></li>&nbsp;
 <li><b><span style="color:SeaGreen">tokenize.tokenize is a Python standard-library function that breaks Python source code into tokens,</span></b> which are the smallest meaningful units of the language.at which source code can be correctly and efficiently analyzed.</li>&nbsp;
@@ -235,22 +235,40 @@ with open("example.txt") as f:
 
 <ul>
 <li>A parser is a program that <b><span style="color:SeaGreen">understands the structure of text</span></b>. </li>&nbsp;
+
 <li>It <b><span style="color:SeaGreen">checks whether the text is correctly constructed according to certain rules</span></b>, and if so, it <b><span style="color:SeaGreen">transforms it into an organized structure</span></b> that a computer can further work with. </li>&nbsp;
+
 <li>The parser <b><span style="color:SeaGreen">checks whether your code follows the rules of the language</span></b> and turns it into a structured form that the computer can understand.</li>&nbsp;
 </ul>
 
 
 #### <em><span style="color:Tan">How it works?</span></em>
 
-1. A <b><span style="color:SeaGreen">parser takes tokens from the lexer</span></b>.
+1. A <b><span style="color:SeaGreen">parser takes tokens from the lexer</span></b>.&nbsp;
 
-    - The <b><span style="color:SeaGreen">parser does not read raw text (characters).</span></b> It reads tokens that were already identified by the lexer.
 
-    <em>Example - parser received the following tokens:</em>
-    
+    - The <b><span style="color:SeaGreen">parser does not read raw text (characters).</span></b> It reads tokens that were already identified by the lexer.&nbsp;
+
+
+    <em>Example - parser took the following tokens:</em>&nbsp;
+
+
     ```
     NAME(x) = NUMBER(10) + NAME(y)
     ```
+
+2. It <b><span style="color:SeaGreen">checks grammar rules</span></b>.
+    
+    <em>Example grammar rule is:</em>
+
+    ```
+    assignment → NAME "=" expression
+    expression → NUMBER "+" NAME
+    ```
+
+   - Parser <b><span style="color:SeaGreen">detects syntax errors</span></b>.
+
+3. <b><span style="color:SeaGreen">Builds a structured representation (AST - abstract syntax tree)</span></b> that the interpreter can execute.
 
 
 
