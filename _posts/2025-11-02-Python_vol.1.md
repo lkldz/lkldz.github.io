@@ -10,9 +10,9 @@ tags: [python]
 
 ### <span style="color:royalblue">Interpreted language</span> 
 
-1. Python is an <b><span style="color:limegreen">interpreted language</span></b>.
+1. Python is an <b><span style="color:SeaGreen">interpreted language</span></b>.
 
-2. <b><u><span style="color:limegreen">Interpreted language</span></u></b> - <em><span style="color:goldenrod">Python code is executed line by line by an interpreter</span></em>, rather than being fully converted (compiled) into machine code before running — like in languages such as C or C++
+2. <b><u><span style="color:SeaGreen">Interpreted language</span></u></b> - <em><span style="color:SeaGreen">Python code is executed line by line by an interpreter</span></em>, rather than being fully converted (compiled) into machine code before running — like in languages such as C or C++
 
 ![localImage](/assets/images/python/interpreter/helloworld.png)
 
@@ -21,31 +21,31 @@ tags: [python]
 
 ### <span style="color:royalblue">Code interpretation</span> 
 
-<b><span style="color:gray">Interpretation workflow</span></b>
+<b><span style="color:orange">Interpretation workflow</span></b>
 
-The Python <em><span style="color:goldenrod">interpreter reads the code line by line</span></em>.
-
-↓
-
-It <em><span style="color:goldenrod">compiles each line into bytecode</span></em> (an intermediate form).
+The Python <em><span style="color:SeaGreen">interpreter reads the code line by line</span></em>.
 
 ↓
 
-The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that bytecode</span></em> immediately.
+It <em><span style="color:SeaGreen">compiles each line into bytecode</span></em> (an intermediate form).
+
+↓
+
+The <em><span style="color:SeaGreen">Python Virtual Machine (PVM) executes that bytecode</span></em> immediately.
 
 ---
 
 ### <span style="color:royalblue">Interpreter</span> 
 
 <ul>
-<li>Interpreter is the <b><span style="color:DarkKhaki">program that reads and runs Python code</span></b>.</li>&nbsp;
-<li>It <b><span style="color:DarkKhaki">translates human-readable Python source code into machine-executable instructions.</span></b></li>&nbsp;
-<li>Its structure includes <b><span style="color:DarkKhaki">several key components</span></b> that work together to perform:</li>&nbsp;
+<li>Interpreter is the <b><span style="color:SeaGreen">program that reads and runs Python code</span></b>.</li>&nbsp;
+<li>It <b><span style="color:SeaGreen">translates human-readable Python source code into machine-executable instructions.</span></b></li>&nbsp;
+<li>Its structure includes <b><span style="color:SeaGreen">several key components</span></b> that work together to perform:</li>&nbsp;
 <ul>
-<li><em><span style="color:DarkKhaki">lexical analysis</span></em>,</li> 
-<li><em><span style="color:DarkKhaki">parsing</span></em>,</li> 
-<li><em><span style="color:DarkKhaki">compilation to bytecode</span></em></li> 
-<li>and <em><span style="color:DarkKhaki">execution by a virtual machine.</span></em></li>
+<li><em><span style="color:SeaGreen">lexical analysis</span></em>,</li> 
+<li><em><span style="color:SeaGreen">parsing</span></em>,</li> 
+<li><em><span style="color:SeaGreen">compilation to bytecode</span></em></li> 
+<li>and <em><span style="color:SeaGreen">execution by a virtual machine.</span></em></li>
 </ul>
 </ul>&nbsp;&nbsp;
 
@@ -60,7 +60,7 @@ The <em><span style="color:goldenrod">Python Virtual Machine (PVM) executes that
 </ul>&nbsp;&nbsp;
 
 
-#### <b><span style="color:MediumSeaGreen">Interpreter components: </span></b>
+#### <b><span style="color:SeaGreen">Interpreter components: </span></b>
 <ul>
 <li><b><span style="color:SeaGreen">Lexer/Tokenizer</span></b> - converts <em><span style="color:SeaGreen">source code into tokens</span></em>. </li>&nbsp;
 <li><b><span style="color:SeaGreen">Parser</span></b> - <em><span style="color:SeaGreen">analyzes tokens</span></em> according to Python grammar rules and <em><span style="color:SeaGreen">builds syntax tree from tokens</span></em>.</li>&nbsp;
@@ -149,9 +149,9 @@ TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 ```
 
 
-<b><span style="color:gold">import tokenize</span></b> - imports Python’s built-in tokenizer module.&nbsp;
+<b><span style="color:SeaGreen"><u>import tokenize</u></span></b> - imports Python’s built-in tokenizer module.&nbsp;
 
-<b><span style="color:gold">from io import BytesIO</span></b>&nbsp;
+<b><span style="color:SeaGreen"><u>from io import BytesIO</u></span></b>&nbsp;
 
 <em><b><span style="color:orange">from io</span></b></em>&nbsp;
 
@@ -195,6 +195,7 @@ Output
 <em><b><span style="color:MediumPurple">Why bytes are used?</span></b></em>&nbsp;
 <ul>
 <li>Because <b><span style="color:MediumPurple">tokenizer works with bytes, not strings</span></b>.</li>&nbsp;
+<li>Byte is a data unit. It consists of 8 bits. Byte can take one of values from 0 to 255. Each of alphanumeric sign can be represented by a specific value (0 to 255).</li>&nbsp;
 <li>Because <b><span style="color:MediumPurple">Source code is a sequence of bytes, not “characters”</span></b>.</li>&nbsp;
 <li><b><span style="color:MediumPurple">Bytes are the lowest, unambiguous, and fastest level</span></b> at which source code can be correctly and efficiently analyzed.</li>&nbsp;
 <li>Only <b><span style="color:MediumPurple">later are those bytes decoded (e.g. as UTF-8) into characters</span></b> .</li>&nbsp;
@@ -211,7 +212,7 @@ Output
 </ul>&nbsp;
 
 
-<b><span style="color:gold">tokens = tokenize.tokenize(BytesIO(code).readline)</span></b>&nbsp;
+<b><span style="color:SeaGreen"><em><u>tokens = tokenize.tokenize(BytesIO(code).readline)</u></em></span></b>&nbsp;
 <ul>
 <li><b><span style="color:SeaGreen">It comes from the tokenize module.</span></b></li>&nbsp;
 <li><b><span style="color:SeaGreen">tokenize.tokenize is a Python standard-library function that breaks Python source code into tokens,</span></b> which are the smallest meaningful units of the language.at which source code can be correctly and efficiently analyzed.</li>&nbsp;
@@ -229,5 +230,28 @@ with open("example.txt") as f:
 ---
 
 ### <span style="color:SandyBrown">Parser</span> 
+
+#### <em><span style="color:tan">Introduction</span></em>
+
+<ul>
+<li>A parser is a program that <b><span style="color:SeaGreen">understands the structure of text</span></b>. </li>&nbsp;
+<li>It <b><span style="color:SeaGreen">checks whether the text is correctly constructed according to certain rules</span></b>, and if so, it <b><span style="color:SeaGreen">transforms it into an organized structure</span></b> that a computer can further work with. </li>&nbsp;
+<li>The parser <b><span style="color:SeaGreen">checks whether your code follows the rules of the language</span></b> and turns it into a structured form that the computer can understand.</li>&nbsp;
+</ul>
+
+
+#### <em><span style="color:Tan">How it works?</span></em>
+
+1. A <b><span style="color:SeaGreen">parser takes tokens from the lexer</span></b>.
+
+    - The <b><span style="color:SeaGreen">parser does not read raw text (characters).</span></b> It reads tokens that were already identified by the lexer.
+
+    <em>Example - parser received the following tokens:</em>
+    
+    ```
+    NAME(x) = NUMBER(10) + NAME(y)
+    ```
+
+
 
 &nbsp;&nbsp; to be continued...
