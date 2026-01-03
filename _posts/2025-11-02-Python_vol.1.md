@@ -1,6 +1,6 @@
 ---
 title: Python vol.1 - Interpreter
-date: 2025-12-13 01:10:00 +100
+date: 2025-12-27 01:10:00 +100
 categories: [python,]
 tags: [python]
 ---
@@ -8,7 +8,7 @@ tags: [python]
 # <span style="color:olive">Python vol.1 - Interpreter</span> 
 ---
 
-### <span style="color:royalblue">Interpreted language</span> 
+### <span style="color:tan">Interpreted language</span> 
 
 1. Python is an <b><span style="color:SeaGreen">interpreted language</span></b>.
 
@@ -19,9 +19,9 @@ tags: [python]
 
 ---
 
-### <span style="color:royalblue">Code interpretation</span> 
+### <span style="color:tan">Code interpretation</span> 
 
-<b><span style="color:orange">Interpretation workflow</span></b>
+<b><span style="color:peru">Interpretation workflow</span></b>
 
 The Python <em><span style="color:SeaGreen">interpreter reads the code line by line</span></em>.
 
@@ -35,7 +35,7 @@ The <em><span style="color:SeaGreen">Python Virtual Machine (PVM) executes that 
 
 ---
 
-### <span style="color:royalblue">Interpreter</span> 
+### <span style="color:tan">Interpreter</span> 
 
 <ul>
 <li>Interpreter is the <b><span style="color:SeaGreen">program that reads and runs Python code</span></b>.</li>&nbsp;
@@ -50,17 +50,17 @@ The <em><span style="color:SeaGreen">Python Virtual Machine (PVM) executes that 
 </ul>&nbsp;&nbsp;
 
 
-#### <b><span style="color:lightcoral">Types of Python interpreters: </span></b>
+#### <b><span style="color:tan">Types of Python interpreters: </span></b>
 <ul>
-<li><b><span style="color:salmon">CPython</span></b> - the default and most widely used interpreter, <em><span style="color:salmon">written in C</span></em>. </li>&nbsp;
-<li><b><span style="color:salmon">PyPy</span></b> - a faster alternative with a <em><span style="color:salmon">Just-In-Time (JIT) compiler.</span></em>. </li>&nbsp;
-<li><b><span style="color:salmon">Jython</span></b> - runs python code on the <em><span style="color:salmon">Java Virtual Machine.</span></em> </li>&nbsp;
-<li><b><span style="color:salmon">IronPython</span></b> - <em><span style="color:salmon">integrates with .NET</span></em> and runs on the Common Language Runtime (CLR).</li>&nbsp;
-<li><b><span style="color:salmon">MicroPython</span></b> - designed <em><span style="color:salmon">for microcontrollers and embedded systems.</span></em></li>&nbsp;
+<li><b><span style="color:SeaGreen">CPython</span></b> - the default and most widely used interpreter, <em><span style="color:SeaGreen">written in C</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">PyPy</span></b> - a faster alternative with a <em><span style="color:SeaGreen">Just-In-Time (JIT) compiler.</span></em>. </li>&nbsp;
+<li><b><span style="color:SeaGreen">Jython</span></b> - runs python code on the <em><span style="color:SeaGreen">Java Virtual Machine.</span></em> </li>&nbsp;
+<li><b><span style="color:SeaGreen">IronPython</span></b> - <em><span style="color:SeaGreen">integrates with .NET</span></em> and runs on the Common Language Runtime (CLR).</li>&nbsp;
+<li><b><span style="color:SeaGreen">MicroPython</span></b> - designed <em><span style="color:SeaGreen">for microcontrollers and embedded systems.</span></em></li>&nbsp;
 </ul>&nbsp;&nbsp;
 
 
-#### <b><span style="color:SeaGreen">Interpreter components: </span></b>
+#### <b><span style="color:Tan">Interpreter components: </span></b>
 <ul>
 <li><b><span style="color:SeaGreen">Lexer/Tokenizer</span></b> - converts <em><span style="color:SeaGreen">source code into tokens</span></em>. </li>&nbsp;
 <li><b><span style="color:SeaGreen">Parser</span></b> - <em><span style="color:SeaGreen">analyzes tokens</span></em> according to Python grammar rules and <em><span style="color:SeaGreen">builds syntax tree from tokens</span></em>.</li>&nbsp;
@@ -75,28 +75,28 @@ The <em><span style="color:SeaGreen">Python Virtual Machine (PVM) executes that 
 
 ---
 
-### <span style="color:SandyBrown">Lexer/Tokenizer</span> 
+### <span style="color:Tan">Lexer/Tokenizer</span> 
 
-A <b><span style="color:sandybrown">lexer (lexical analyzer)</span></b> is the <b><span style="color:sandybrown">first stage of processing</span></b> Python source code.
+A <b><span style="color:SeaGreen">lexer (lexical analyzer)</span></b> is the <b><span style="color:SeaGreen">first stage of processing</span></b> Python source code.
 
-Its job is to <b><span style="color:sandybrown">read raw text and convert it into a stream of tokens</span></b>.
+Its job is to <b><span style="color:SeaGreen">read raw text and convert it into a stream of tokens</span></b>.
 
-In <b><span style="color:sandybrown">CPython</span></b>, the <b><span style="color:sandybrown">tokenizer is part of the C module defined in tokenizer.c</span></b>.
+In <b><span style="color:SeaGreen">CPython</span></b>, the <b><span style="color:SeaGreen">tokenizer is part of the C module defined in tokenizer.c</span></b>.
 
-#### <em><span style="color:DarkOrange">How Lexer/Tokenizer works?</span></em>
+#### <em><span style="color:Tan">How Lexer/Tokenizer works?</span></em>
 
 <ol>
-<li>Lexer <b><span style="color:DarkOrange">scans through the entire source text</span></b> and <b><span style="color:DarkOrange">reads the code character by character</span></b>.</li>&nbsp;
-<li><b><span style="color:DarkOrange">Groups characters into tokens</span></b>.</li>&nbsp;
-<li><b><span style="color:DarkOrange">The tokenizer does not turn source code into bytes — the source code already is bytes.</span></b>
+<li>Lexer <b><span style="color:SeaGreen">scans through the entire source text</span></b> and <b><span style="color:SeaGreen">reads the code character by character</span></b>.</li>&nbsp;
+<li><b><span style="color:SeaGreen">Groups characters into tokens</span></b>.</li>&nbsp;
+<li><b><span style="color:SeaGreen">The tokenizer does not turn source code into bytes — the source code already is bytes.</span></b>
 The tokenizer simply groups bytes into tokens.</li>&nbsp;
-<li><b><span style="color:DarkOrange">A .py file on disk is simply a sequence of bytes</span></b>. The tokenizer does not convert anything into bytes — it receives bytes from the operating system.</li>&nbsp;
-<li><b><span style="color:DarkOrange">Ignores irrelevant text</span></b>. For example comments (# ...).</li>&nbsp;
-<li>A tokenizer does not need to know Python syntax to assign tokens. <b><span style="color:DarkOrange">It does not understand meaning, only character patterns, based on simple lexical rules (regexes an so on).</span></b></li>&nbsp;
-<li>The tokenizer reads characters from left to right and asks: <b><span style="color:DarkOrange">“Which pattern of characters does this fragment match?”</span></b></li>&nbsp;
-<li><b><span style="color:DarkOrange">Handles indentation levels.</span></b></li>&nbsp;
-<li><b><span style="color:DarkOrange">Processes multiline strings and f-strings.</span></b></li>&nbsp;
-<li><b><span style="color:DarkOrange">Sends tokens to the parser</span></b>.</li>
+<li><b><span style="color:SeaGreen">A .py file on disk is simply a sequence of bytes</span></b>. The tokenizer does not convert anything into bytes — it receives bytes from the operating system.</li>&nbsp;
+<li><b><span style="color:SeaGreen">Ignores irrelevant text</span></b>. For example comments (# ...).</li>&nbsp;
+<li>A tokenizer does not need to know Python syntax to assign tokens. <b><span style="color:SeaGreen">It does not understand meaning, only character patterns, based on simple lexical rules (regexes an so on).</span></b></li>&nbsp;
+<li>The tokenizer reads characters from left to right and asks: <b><span style="color:SeaGreen">“Which pattern of characters does this fragment match?”</span></b></li>&nbsp;
+<li><b><span style="color:SeaGreen">Handles indentation levels.</span></b></li>&nbsp;
+<li><b><span style="color:SeaGreen">Processes multiline strings and f-strings.</span></b></li>&nbsp;
+<li><b><span style="color:SeaGreen">Sends tokens to the parser</span></b>.</li>
 </ol>&nbsp;
 
 <em><span style="color:RosyBrown">Examples of token types:</span></em>
@@ -110,17 +110,17 @@ The tokenizer simply groups bytes into tokens.</li>&nbsp;
 <li><span style="color:RosyBrown">KEYWORD</span> — e.g., if, for, def</li>
 </ul>&nbsp;
 
-#### <em><span style="color:peru">The token’s characteristics</span></em>
+#### <em><span style="color:tan">The token’s characteristics</span></em>
 
 <ol>
-<li>Tokens are <b><span style="color:peru">flat and don't know about Python's syntax </span></b>.</li>&nbsp;
-<li>A token is just a <b><span style="color:peru">simple, linear item produced by the tokenizer</span></b>.</li>&nbsp;
-<li>They are <b><span style="color:peru">produced one after another, in a flat sequence</span></b>.</li>&nbsp;
-<li>The flat sequence means - <b><span style="color:peru">there is no hierarchical structure (no tree, no nesting, no precedence awareness)</span></b>.</li>&nbsp;
-<li>The <b><span style="color:peru">tokenizer only reads characters and emits tokens</span></b>.</li>&nbsp;
-<li><b><span style="color:peru">The tokenizer does not attempt to understand</span></b> expressions, control flow, operator precedence and so on.</li>&nbsp;
-<li>The tokenizer <b><span style="color:peru">does not understand the grammar of Python</span></b>.</li>&nbsp;
-<li>The tokenizer <b><span style="color:peru">only classifies substrings into categories</span></b>.</li>&nbsp;
+<li>Tokens are <b><span style="color:SeaGreen">flat and don't know about Python's syntax </span></b>.</li>&nbsp;
+<li>A token is just a <b><span style="color:SeaGreen">simple, linear item produced by the tokenizer</span></b>.</li>&nbsp;
+<li>They are <b><span style="color:SeaGreen">produced one after another, in a flat sequence</span></b>.</li>&nbsp;
+<li>The flat sequence means - <b><span style="color:SeaGreen">there is no hierarchical structure (no tree, no nesting, no precedence awareness)</span></b>.</li>&nbsp;
+<li>The <b><span style="color:SeaGreen">tokenizer only reads characters and emits tokens</span></b>.</li>&nbsp;
+<li><b><span style="color:SeaGreen">The tokenizer does not attempt to understand</span></b> expressions, control flow, operator precedence and so on.</li>&nbsp;
+<li>The tokenizer <b><span style="color:SeaGreen">does not understand the grammar of Python</span></b>.</li>&nbsp;
+<li>The tokenizer <b><span style="color:SeaGreen">only classifies substrings into categories</span></b>.</li>&nbsp;
 </ol>
 
 #### <em><span style="color:tan">The pracitcal example</span></em>
@@ -149,34 +149,34 @@ TokenInfo(type=0 (ENDMARKER), string='', start=(2, 0), end=(2, 0), line='')
 ```
 
 
-<b><span style="color:SeaGreen"><u>import tokenize</u></span></b> - imports Python’s built-in tokenizer module.&nbsp;
+<b><span style="color:SeaGreen"><u><em>import tokenize</em></u></span></b> - imports Python’s built-in tokenizer module.&nbsp;
 
-<b><span style="color:SeaGreen"><u>from io import BytesIO</u></span></b>&nbsp;
+<b><span style="color:SeaGreen"><u><em>from io import BytesIO</em></u></span></b>&nbsp;
 
-<em><b><span style="color:orange">from io</span></b></em>&nbsp;
+<em><b><span style="color:tan">from io</span></b></em>&nbsp;
 
 <ul>
-<li>&emsp;<b><span style="color:orange">load the module named io</span></b>.</li>&nbsp;
+<li>&emsp;<b><span style="color:SeaGreen">load the module named io</span></b>.</li>&nbsp;
 
-<li>&emsp;io is a <b><span style="color:orange">standard Python module</span></b>.</li>&nbsp;
+<li>&emsp;io is a <b><span style="color:SeaGreen">standard Python module</span></b>.</li>&nbsp;
 
-<li>&emsp;It <b><span style="color:orange">provides tools for input/output (I/O): reading files, writing files, working with in-memory streams</span></b> <em>[file-like object that lives in RAM instead of on disk, no real file is created.]</em> (text or bytes). So this line is just an importing the module's code.</li>&nbsp;
+<li>&emsp;It <b><span style="color:SeaGreen">provides tools for input/output (I/O): reading files, writing files, working with in-memory streams</span></b> <em>[file-like object that lives in RAM instead of on disk, no real file is created.]</em> (text or bytes). So this line is just an importing the module's code.</li>&nbsp;
 </ul>
-<em><b><span style="color:MediumSeaGreen">import BytesIO</span></b></em>&nbsp;
+<em><b><span style="color:tan">import BytesIO</span></b></em>&nbsp;
 <ul>
-<li>&emsp;from the io module, <b><span style="color:MediumSeaGreen">import only the BytesIO class</span></b>.</li>&nbsp;
+<li>&emsp;from the io module, <b><span style="color:SeaGreen">import only the BytesIO class</span></b>.</li>&nbsp;
 
-<li>&emsp;BytesIO is a <b><span style="color:MediumSeaGreen">file-like object that lives in memory</span></b>.</li>&nbsp;
+<li>&emsp;BytesIO is a <b><span style="color:SeaGreen">file-like object that lives in memory</span></b>.</li>&nbsp;
 
-<li>&emsp;It lets you <b><span style="color:MediumSeaGreen">treat bytes stored in a variable as if they were coming from a file</span></b></li>&nbsp;
+<li>&emsp;It lets you <b><span style="color:SeaGreen">treat bytes stored in a variable as if they were coming from a file</span></b></li>&nbsp;
 
-<li>&emsp;This matters as the <b><span style="color:MediumSeaGreen">tokenizer expects a file, not a string</span></b>.</li>&nbsp;
+<li>&emsp;This matters as the <b><span style="color:SeaGreen">tokenizer expects a file, not a string</span></b>.</li>&nbsp;
 </ul>
-<b><span style="color:gold">code = b"x = 10 + 20"</span></b>&nbsp;
+<b><span style="color:tan"><em>code = b"x = 10 + 20"</em></span></b>&nbsp;
 
-- <b><span style="color:LightSalmon">Store the text x = 10 + 20 as raw bytes</span></b>.
-- The <b><span style="color:LightSalmon">b before the quotes means this is a bytes</span></b> literal, not a normal string.
-- <b><span style="color:LightSalmon">Bytes are numbers between 0–255 that represent characters</span></b>.
+- <b><span style="color:SeaGreen">Store the text x = 10 + 20 as raw bytes</span></b>.
+- The <b><span style="color:SeaGreen">b before the quotes means this is a bytes</span></b> literal, not a normal string.
+- <b><span style="color:SeaGreen">Bytes are numbers between 0–255 that represent characters</span></b>.
 ```python
 print(list(b"x = 10 + 20"))
 ```
@@ -270,6 +270,10 @@ with open("example.txt") as f:
 
 3. <b><span style="color:SeaGreen">Builds a structured representation (AST - abstract syntax tree)</span></b> that the interpreter can execute.
 
+
+---
+
+### <span style="color:SandyBrown">AST</span> 
 
 
 &nbsp;&nbsp; to be continued...
