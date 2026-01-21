@@ -62,4 +62,4 @@ Rule:
 </ul>
 
 
-![localImage](/assets/images/python/roundings/round_function4.png)
+![localImage](/assets/images/python/roundings/round_function5.png)
