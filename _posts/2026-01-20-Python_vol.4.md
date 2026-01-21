@@ -14,32 +14,39 @@ tags: [python]
 
 2. It rounds a number:
 <ul>
-<li> to the <b><span style="color:SeaGreen">nearest integer</span></b> </li>
-<li> or to a <b><span style="color:SeaGreen">specified number of decimal places</span></b> </li>
+<li> to the <b><span style="color:SeaGreen">nearest integer</span></b></li>
+<li>or to a <b><span style="color:SeaGreen">specified number of decimal places</span></b></li>
 </ul>
 
 3. How to use the round() function?
-```
+
+```python
 round(number, ndigits)
  ```
 
 ### <span style="color:tan">round() function - examples</span>
 
-<b><span style="color:SeaGreen">**Default rounding (the nearest integer):**</span></b> </li>
+<b><span style="color:SeaGreen">**Default rounding (the nearest integer):**</span></b>
+
 
 ![localImage](/assets/images/python/roundings/round_function1.png)
+
 
 ---
 
 <b><span style="color:SeaGreen">**Rounding with ndigit=2 (second digital place):**</span></b>
 
+
 ![localImage](/assets/images/python/roundings/round_function2.png)
+
 
 ---
 
 <b><span style="color:SeaGreen">**Rounding negative numbers:**</span></b>
 
+
 ![localImage](/assets/images/python/roundings/round_function3.png)
+
 
 ---
 
@@ -49,7 +56,7 @@ round(number, ndigits)
 
 Rule:
 <ul>
-<li>ndigits = -1 → rounds to tens </li>
+<li>ndigits = -1 → rounds to tens</li>
 <li>ndigits = -2 → rounds to hundreds</li>
 <li>ndigits = -3 → rounds to thousands </li>
 </ul>
