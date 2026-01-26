@@ -488,7 +488,7 @@ process_input(3.14)            # Unsupported type!
 
 ```
 
-- <b><span style="color:SeaGreen"> isinstance() vs type()</span></b>:
+## <span style="color:tan"> isinstance() vs type()</span>
  
 - Can check multiple types at once.
 
