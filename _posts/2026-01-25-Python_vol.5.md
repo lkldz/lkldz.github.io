@@ -26,9 +26,9 @@ tags: [python]
 
 ### <span style="color:tan">Rules for variables names.</span> 
 
-1. Must <b><span style="color:SeaGreen">start with a letter or underscore</span></b>.
+- Must <b><span style="color:SeaGreen">start with a letter or underscore</span></b>.
 
-2. <b><span style="color:SeaGreen">Can't start with a number </span></b>.
+- <b><span style="color:SeaGreen">Can't start with a number </span></b>.
 
 ```python
 name = "John"       # ✓ Valid
@@ -36,9 +36,11 @@ _age = 25           # ✓ Valid
 2name = "John"      # ✗ Invalid
 ```
 
-3. Can only <b><span style="color:SeaGreen">contain letters, digits, and underscores</span></b>. 
 
-4. <b><span style="color:SeaGreen">No spaces or special characters</span></b>.
+- Can only <b><span style="color:SeaGreen">contain letters, digits, and underscores</span></b>. 
+
+- <b><span style="color:SeaGreen">No spaces or special characters</span></b>.
+
 
 ```python
 first_name = "John"  # ✓ Valid
@@ -46,7 +48,8 @@ first-name = "John"  # ✗ Invalid (hyphen not allowed)
 first name = "John"  # ✗ Invalid (space not allowed)
 ```
 
-5. <b><span style="color:SeaGreen">Case-sensitive</span></b> — Name, name, and NAME are different variables
+
+- <b><span style="color:SeaGreen">Case-sensitive</span></b> — Name, name, and NAME are different variables
 
 ```python
 age = 25
@@ -54,14 +57,14 @@ Age = 30
 # These are two different variables
 ```
 
-6. <b><span style="color:SeaGreen">Cannot use Python keywords</span></b> — can't use reserved words like if, for, while, class, etc.
+- <b><span style="color:SeaGreen">Cannot use Python keywords</span></b> — can't use reserved words like if, for, while, class, etc.
 
 ```python
 for = 5      # ✗ Invalid (for is a keyword)
 class = 10   # ✗ Invalid (class is a keyword)
 ```
 
-7. <b><span style="color:SeaGreen">No spaces allowed</span></b>  — use underscores to separate words instead.
+- <b><span style="color:SeaGreen">No spaces allowed</span></b>  — use underscores to separate words instead.
 
 ```python
 student_name = "Anna"     # ✓ Valid (snake_case)
@@ -69,7 +72,7 @@ studentName = "Anna"      # ✓ Valid (camelCase - less common)
 student name = "Anna"     # ✗ Invalid
 ```
 
-8. <b><span style="color:SeaGreen">Python recommends snake_case</span></b> — lowercase letters with underscores between words:
+- <b><span style="color:SeaGreen">Python recommends snake_case</span></b> — lowercase letters with underscores between words:
 
 ```python
 first_name = "John"      # ✓ Recommended
@@ -77,7 +80,9 @@ user_age = 30            # ✓ Recommended
 _private_var = 100       # ✓ Underscore often indicates private
 ```
 
+
 ---
+
 
 ### <span style="color:tan">Dynamic typing.</span> 
 
@@ -119,11 +124,13 @@ result = x + y  # ✗ Error! Can't add int and string
 
 ### <span style="color:tan">Variable reassignment.</span> 
 
-1. <b><span style="color:SeaGreen">Reassignment means changing the value of a variable that already exists</span></b>. 
+- <b><span style="color:SeaGreen">Reassignment means changing the value of a variable that already exists</span></b>. 
 
-2. We can reassign a variable as many times as you want.
 
-3. Each time we use the = operator with an existing variable name, we overwrite its previous value.
+- We can reassign a variable as many times as you want.
+
+
+- Each time we use the = operator with an existing variable name, we overwrite its previous value.
 
 ```python
 x = 10
@@ -136,7 +143,8 @@ x = 30    # Reassign again
 print(x)  # 30
 ```
 
-4. Thanks to dynamic typing, <b><span style="color:SeaGreen">we can reassign a variable to a completely different type</span></b>.
+- Thanks to dynamic typing, <b><span style="color:SeaGreen">we can reassign a variable to a completely different type</span></b>.
+
 
 ```python
 value = 100        # Integer
@@ -152,9 +160,10 @@ value = True       # Now it's a boolean
 print(value)       # True
 ```
 
-5. Using current value in reassignment - <b><span style="color:SeaGreen">we can use a variable's current value to calculate its new value</span></b>.
+- Using current value in reassignment - <b><span style="color:SeaGreen">we can use a variable's current value to calculate its new value</span></b>.
 
 Example 1:
+
 ```python
 a = 10
 a = a + a
@@ -163,6 +172,7 @@ print(a)
 ```
 
 Examples 2:
+
 ```python
 count = 5
 count = count + 1   # Use old value to calculate new value
@@ -171,12 +181,15 @@ print(count)        # 6
 count += 1          # Shorthand for count = count + 1
 print(count)        # 7
 ```
+
+
 ---
 
 
 ### <span style="color:tan">Saving original value.</span> 
 
-1. <b><span style="color:SeaGreen">When you reassign a variable, the old value is lost</span></b> (unless you save it in another variable).
+- <b><span style="color:SeaGreen">When you reassign a variable, the old value is lost</span></b> (unless you save it in another variable).
+
 
 ```python
 name = "Anna"
@@ -184,7 +197,9 @@ name = "John"   # Old value "Anna" is now gone
 # You can't get "Anna" back unless you saved it
 ```
 
-2. <b><span style="color:SeaGreen">If you need to keep the original value, save it first</span></b>:
+
+- <b><span style="color:SeaGreen">If you need to keep the original value, save it first</span></b>:
+
 
 ```python
 name = "Anna"
@@ -196,6 +211,8 @@ print(name)         # John
 ```
 
 ---
+
+
 ### <span style="color:tan"> Swapping values.</span> 
 
 ```python
@@ -300,7 +317,7 @@ print(type(None))             # <class 'NoneType'>
 
 ### <span style="color:tan"> Function type() in practise. </span>
 
-1. <b><span style="color:SeaGreen">Debugging</span></b> — check if a variable has the expected type:
+- <b><span style="color:SeaGreen">Debugging</span></b> — check if a variable has the expected type:
 
 ```python
 value = "123"
@@ -308,7 +325,7 @@ print(type(value))  # <class 'str'>
 # Oops! It's a string, not an integer
 ```
 
-2. <b><span style="color:SeaGreen">Conditional logic</span></b> — make decisions based on type:
+- <b><span style="color:SeaGreen">Conditional logic</span></b> — make decisions based on type:
 
 ```python
 x = 10
@@ -319,7 +336,9 @@ elif type(x) == str:
     print("x is a string")
 ```
 
-3. <b><span style="color:SeaGreen">Type checking in functions</span></b>:
+- <b><span style="color:SeaGreen">Type checking in functions</span></b>:
+
+
 ```python
 def add_numbers(a, b):
     if type(a) != int or type(b) != int:
@@ -329,24 +348,34 @@ def add_numbers(a, b):
 
 print(add_numbers(5, 10))      # 15
 print(add_numbers(5, "10"))    # Both arguments must be integers!
+
 ```
 
+
 ---
+
+
 ## <span style="color:tan"> Function isinstance() </span>
 
-1. For type checking, <b><span style="color:SeaGreen">isinstance() is often preferred</span></b>.
+- For type checking, <b><span style="color:SeaGreen">isinstance() is often preferred</span></b>.
 
-2. The <b><span style="color:SeaGreen">isinstance() function checks if an object is an instance of a class or type</span></b>. 
+- The <b><span style="color:SeaGreen">isinstance() function checks if an object is an instance of a class or type</span></b>. 
 
-3. It <b><span style="color:SeaGreen">returns True if the object is of that type, and False otherwise</span></b>.
+- It <b><span style="color:SeaGreen">returns True if the object is of that type, and False otherwise</span></b>.
+
 
 Syntax:
+
 ```python
+
 isinstance(object, classinfo)
+
 ```
 
 Example 1:
+
 ```python
+
 x = 10
 print(isinstance(x, int))        # True
 
@@ -358,10 +387,13 @@ print(isinstance(z, float))      # True
 
 is_active = True
 print(isinstance(is_active, bool))  # True
+
 ```
 
-4. <b><span style="color:SeaGreen">Can check multiple types at once</span></b>.
+- <b><span style="color:SeaGreen">Can check multiple types at once</span></b>.
+
 ```python
+
 x = 10
 
 # Is x either int or float?
@@ -372,10 +404,13 @@ print(isinstance(y, (int, float)))   # False
 
 z = 3.14
 print(isinstance(z, (int, float)))   # True
+
 ```
 
-5. In <b><span style="color:SeaGreen">conditional statements</span></b>:
+- In <b><span style="color:SeaGreen">conditional statements</span></b>:
+
 ```python
+
 value = 42
 
 if isinstance(value, int):
@@ -386,10 +421,13 @@ elif isinstance(value, float):
     print("It's a float")
 else:
     print("Unknown type")
+
 ```
 
-6. <b><span style="color:SeaGreen">Function with type checking</span></b>:
+- <b><span style="color:SeaGreen">Function with type checking</span></b>:
+
 ```python
+
 def double_value(num):
     if isinstance(num, (int, float)):
         return num * 2
@@ -400,10 +438,13 @@ def double_value(num):
 print(double_value(5))      # 10
 print(double_value(2.5))    # 5.0
 print(double_value("5"))    # Error: Please provide a number!
+
 ```
 
-7. <b><span style="color:SeaGreen">With collections</span></b>:
+- <b><span style="color:SeaGreen">With collections</span></b>:
+
 ```python
+
 my_list = [1, 2, 3]
 my_dict = {"name": "Anna"}
 my_tuple = (1, 2, 3)
@@ -413,16 +454,23 @@ print(isinstance(my_list, list))    # True
 print(isinstance(my_dict, dict))    # True
 print(isinstance(my_tuple, tuple))  # True
 print(isinstance(my_set, set))      # True
+
 ```
-8. <b><span style="color:SeaGreen">Checking with None</span></b>:
+
+- <b><span style="color:SeaGreen">Checking with None</span></b>:
+
 ```python
+
 value = None
 print(isinstance(value, type(None)))  # True
 print(value is None)                  # Better way to check for None
+
 ```
-9. <b><span style="color:SeaGreen">Practical example — data validation</span></b>:
+
+- <b><span style="color:SeaGreen">Practical example — data validation</span></b>:
 
 ```python
+
 def process_input(data):
     if isinstance(data, int):
         print(f"Processing integer: {data * 2}")
@@ -437,9 +485,10 @@ process_input(10)              # Processing integer: 20
 process_input("hello")         # Processing string: HELLO
 process_input([1, 2, 3])       # Processing list: 3 items
 process_input(3.14)            # Unsupported type!
+
 ```
 
-10. <b><span style="color:SeaGreen"> isinstance() vs type()</span></b>:
+- <b><span style="color:SeaGreen"> isinstance() vs type()</span></b>:
  
 - Can check multiple types at once.
 
@@ -450,6 +499,7 @@ process_input(3.14)            # Unsupported type!
 - The key difference is how they handle inheritance. isinstance() is more flexible:
 
 ```python
+
 x = True
 
 # Using type()
@@ -459,6 +509,7 @@ print(type(x) == bool)          # True
 # Using isinstance()
 print(isinstance(x, bool))      # True
 print(isinstance(x, int))       # True (bool is a subclass of int)
+
 ```
 
 In Python, <b><span style="color:SeaGreen"> bool is a subclass of int, so isinstance() recognizes this relationship, while type() doesn't</span></b>.
